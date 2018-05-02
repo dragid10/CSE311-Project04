@@ -1,6 +1,6 @@
 package main.adapter;
 
-import edu.tum.cs.i1.thermometers.CelsiusThermo;
+import main.adapter.thermometers.CelsiusThermo;
 
 import java.text.DecimalFormat;
 

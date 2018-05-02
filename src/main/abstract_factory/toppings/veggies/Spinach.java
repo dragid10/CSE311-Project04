@@ -1,4 +1,4 @@
-package main.abstract_factory.topings.veggies;
+package main.abstract_factory.toppings.veggies;
 
 public class Spinach implements Veggies {
 

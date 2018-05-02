@@ -1,4 +1,4 @@
-package main.abstract_factory.topings.pepperoni;
+package main.abstract_factory.toppings.pepperoni;
 
 
 public class SlicedPepperoni implements Pepperoni {

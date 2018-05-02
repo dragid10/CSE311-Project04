@@ -1,11 +1,11 @@
 package main.abstract_factory.toppingfactory;
 
 
-import main.abstract_factory.topings.pepperoni.Pepperoni;
-import main.abstract_factory.topings.pepperoni.SlicedPepperoni;
-import main.abstract_factory.topings.sauce.MarinaraSauce;
-import main.abstract_factory.topings.sauce.Sauce;
-import main.abstract_factory.topings.veggies.*;
+import main.abstract_factory.toppings.pepperoni.Pepperoni;
+import main.abstract_factory.toppings.pepperoni.SlicedPepperoni;
+import main.abstract_factory.toppings.sauce.MarinaraSauce;
+import main.abstract_factory.toppings.sauce.Sauce;
+import main.abstract_factory.toppings.veggies.*;
 import main.abstract_factory.toppings.cheese.Cheese;
 import main.abstract_factory.toppings.cheese.ReggianoCheese;
 import main.abstract_factory.toppings.clams.Clams;

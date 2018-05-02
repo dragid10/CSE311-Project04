@@ -1,9 +1,9 @@
 package main.abstract_factory.toppingfactory;
 
 
-import main.abstract_factory.topings.pepperoni.Pepperoni;
-import main.abstract_factory.topings.sauce.Sauce;
-import main.abstract_factory.topings.veggies.Veggies;
+import main.abstract_factory.toppings.pepperoni.Pepperoni;
+import main.abstract_factory.toppings.sauce.Sauce;
+import main.abstract_factory.toppings.veggies.Veggies;
 import main.abstract_factory.toppings.cheese.Cheese;
 import main.abstract_factory.toppings.clams.Clams;
 import main.abstract_factory.toppings.dough.Dough;

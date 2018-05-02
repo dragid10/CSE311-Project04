@@ -1,4 +1,4 @@
-package main.abstract_factory.topings.sauce;
+package main.abstract_factory.toppings.sauce;
 
 
 public class MarinaraSauce implements Sauce {
