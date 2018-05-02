@@ -1,6 +1,7 @@
 package main.abstract_factory.pizza;
 
 
+import main.abstract_factory.toppings.meat.Meat;
 import main.abstract_factory.toppings.pepperoni.Pepperoni;
 import main.abstract_factory.toppings.sauce.Sauce;
 import main.abstract_factory.toppings.veggies.Veggies;
@@ -17,6 +18,7 @@ public abstract class Pizza {
     Cheese cheese;
     Pepperoni pepperoni;
     Clams clam;
+    Meat meat;
     //TODO: Extend the Pizza class for the meat topping
 
     public abstract void prepare();

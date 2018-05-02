@@ -1,6 +1,7 @@
 package main.abstract_factory.toppingfactory;
 
 
+import main.abstract_factory.toppings.meat.Meat;
 import main.abstract_factory.toppings.pepperoni.Pepperoni;
 import main.abstract_factory.toppings.pepperoni.SlicedPepperoni;
 import main.abstract_factory.toppings.sauce.PlumTomatoSauce;
@@ -43,5 +44,7 @@ public class ChicagoPizzaToppingFactory
     public Clams createClam() {
         return new FrozenClams();
     }
+
+    public Meat createMeat() { return null; }
 
 }
