@@ -1,8 +1,11 @@
-import java.awt.Point;
+package main.observer.observers;
+
+import main.observer.model.TemperatureModel;
+
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Observable;
-
 //import CelsiusGUI.DisplayListener;
 //import CelsiusGUI.LowerTempListener;
 //import CelsiusGUI.RaiseTempListener;

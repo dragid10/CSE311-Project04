@@ -1,14 +1,17 @@
 package test.observer_test.java.de.tum.cs.i1.pse;
 
-import de.tum.cs.i1.pse.model.TemperatureModel;
-import de.tum.cs.i1.pse.observers.KelvinGUI;
+//import de.tum.cs.i1.pse.model.TemperatureModel;
+//import de.tum.cs.i1.pse.observers.KelvinGUI;
+
+import main.observer.model.TemperatureModel;
+import main.observer.observers.KelvinGUI;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.awt.*;
 import java.util.Random;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 public class FunctionalTest {
 

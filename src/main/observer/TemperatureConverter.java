@@ -1,16 +1,21 @@
 package main.observer;
 
-import de.tum.cs.i1.pse.model.TemperatureModel;
-import de.tum.cs.i1.pse.observers.CelsiusGUI;
-import de.tum.cs.i1.pse.observers.FahrenheitGUI;
-import de.tum.cs.i1.pse.observers.GaugeGUI;
-import de.tum.cs.i1.pse.observers.SliderGUI;
+import main.observer.model.TemperatureModel;
+import main.observer.observers.*;
 
 import java.awt.*;
 
+//package de.tum.cs.i1.pse;
 
-//TODO create KelvinGUI class
-//TODO Add methods in TemperatureModel class
+//import de.tum.cs.i1.pse.model.TemperatureModel;
+//import de.tum.cs.i1.pse.observers.CelsiusGUI;
+//import de.tum.cs.i1.pse.observers.FahrenheitGUI;
+//import de.tum.cs.i1.pse.observers.GaugeGUI;
+//import de.tum.cs.i1.pse.observers.SliderGUI;
+
+
+//TODO create KelvinGUI class //DONE
+//TODO Add methods in TemperatureModel class //DONE
 
 public class TemperatureConverter {
 
@@ -30,5 +35,8 @@ public class TemperatureConverter {
         gaugeGUI.setVisible(true);
 
         //TODO: instantiate the Kelvin view
+
+        KelvinGUI kelvinGUI = new KelvinGUI(temperature, new Point(100, 200));
+        kelvinGUI.show();
     }
 }

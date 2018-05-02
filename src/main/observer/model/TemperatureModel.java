@@ -1,4 +1,5 @@
 package main.observer.model;
+//package de.tum.cs.i1.pse.model;
 
 public class TemperatureModel extends java.util.Observable {
 
@@ -8,14 +9,18 @@ public class TemperatureModel extends java.util.Observable {
         return (temperatureC * 9.0 / 5.0) + 32.0;
     }
 
+    public double getC() {
+        return temperatureC;
+    }
+
+    public double getK() {
+        return (temperatureC + 273.15);
+    }
+
     public void setF(double tempF) {
         temperatureC = (tempF - 32.0) * 5.0 / 9.0;
         setChanged();
         notifyObservers();
-    }
-
-    public double getC() {
-        return temperatureC;
     }
 
     public void setC(double tempC) {
@@ -23,4 +28,11 @@ public class TemperatureModel extends java.util.Observable {
         setChanged();
         notifyObservers();
     }
+
+    public void setK(double tempK) {
+        temperatureC = (tempK - 273.15);
+        setChanged();
+        notifyObservers();
+    }
+
 }

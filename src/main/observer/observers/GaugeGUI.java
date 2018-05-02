@@ -1,6 +1,6 @@
 package main.observer.observers;
 
-import de.tum.cs.i1.pse.model.TemperatureModel;
+import main.observer.model.TemperatureModel;
 
 import java.awt.*;
 import java.util.Observable;
