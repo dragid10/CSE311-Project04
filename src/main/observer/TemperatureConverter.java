@@ -1,16 +1,17 @@
 package main.observer;
 
-import de.tum.cs.i1.pse.model.TemperatureModel;
-import de.tum.cs.i1.pse.observers.CelsiusGUI;
-import de.tum.cs.i1.pse.observers.FahrenheitGUI;
-import de.tum.cs.i1.pse.observers.GaugeGUI;
-import de.tum.cs.i1.pse.observers.SliderGUI;
-
-import java.awt.*;
 
 
 //TODO create KelvinGUI class
 //TODO Add methods in TemperatureModel class
+
+import main.observer.model.TemperatureModel;
+import main.observer.observers.CelsiusGUI;
+import main.observer.observers.FahrenheitGUI;
+import main.observer.observers.GaugeGUI;
+import main.observer.observers.SliderGUI;
+
+import java.awt.*;
 
 public class TemperatureConverter {
 

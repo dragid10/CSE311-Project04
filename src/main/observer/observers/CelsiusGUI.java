@@ -1,7 +1,7 @@
 package main.observer.observers;
 
 
-import de.tum.cs.i1.pse.model.TemperatureModel;
+import main.observer.model.TemperatureModel;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -18,6 +18,7 @@ public class CelsiusGUI extends TemperatureGUI {
         addDisplayListener(new DisplayListener());
     }
 
+    @Override
     public void update(Observable t, Object o) {
         setDisplay("" + getModel().getC());
     }

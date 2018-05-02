@@ -1,11 +1,9 @@
 package main.observer.observers;
 
-import de.tum.cs.i1.pse.model.TemperatureModel;
+
+import main.observer.model.TemperatureModel;
 
 import java.awt.*;
-import java.awt.event.AdjustmentEvent;
-import java.awt.event.AdjustmentListener;
-import java.util.Observable;
 import java.util.Observer;
 
 public class SliderGUI implements Observer {
