@@ -15,10 +15,10 @@ public abstract class Pizza {
     Dough dough;
     Sauce sauce;
     Veggies veggies[];
-    Cheese cheese;
+    public Cheese cheese;
     Pepperoni pepperoni;
     Clams clam;
-    Meat meat;
+    public Meat meat;
     //TODO: Extend the Pizza class for the meat topping
 
     public abstract void prepare();

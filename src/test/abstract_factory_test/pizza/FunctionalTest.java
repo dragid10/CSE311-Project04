@@ -1,16 +1,16 @@
 package test.abstract_factory_test.pizza;
 
-import de.tum.cs.i1.pse.factory.pizzastore.ChicagoPizzaStore;
-import de.tum.cs.i1.pse.factory.pizzastore.NYPizzaStore;
-import de.tum.cs.i1.pse.factory.pizzastore.PizzaStore;
-import de.tum.cs.i1.pse.factory.toppings.cheese.MozzarellaCheese;
-import de.tum.cs.i1.pse.factory.toppings.cheese.ReggianoCheese;
-import de.tum.cs.i1.pse.factory.toppings.meat.Chicken;
-import de.tum.cs.i1.pse.factory.toppings.meat.Ham;
+
+import main.abstract_factory.pizzastore.ChicagoPizzaStore;
+import main.abstract_factory.pizzastore.NYPizzaStore;
+import main.abstract_factory.pizzastore.PizzaStore;
+import main.abstract_factory.toppings.cheese.MozzarellaCheese;
+import main.abstract_factory.toppings.cheese.ReggianoCheese;
+import main.abstract_factory.toppings.meat.Ham;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 public class FunctionalTest {
 

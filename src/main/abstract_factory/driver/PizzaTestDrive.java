@@ -1,9 +1,10 @@
 package main.abstract_factory.driver;
 
-import de.tum.cs.i1.pse.factory.pizza.Pizza;
-import de.tum.cs.i1.pse.factory.pizzastore.ChicagoPizzaStore;
-import de.tum.cs.i1.pse.factory.pizzastore.NYPizzaStore;
-import de.tum.cs.i1.pse.factory.pizzastore.PizzaStore;
+
+import main.abstract_factory.pizza.Pizza;
+import main.abstract_factory.pizzastore.ChicagoPizzaStore;
+import main.abstract_factory.pizzastore.NYPizzaStore;
+import main.abstract_factory.pizzastore.PizzaStore;
 
 public class PizzaTestDrive {
 
