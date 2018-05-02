@@ -1,15 +1,13 @@
 package main.adapter;
 
-import main.adapter.thermometers.CelsiusThermo;
-
+import main.adapter.thermometers.FahrenheitThermo;
 import java.text.DecimalFormat;
 
 public class TemperatureCurve {
 
     public static void main(String[] args) {
 
-
-        ThermoInterface thermo = new CelsiusThermo();
+        ThermoInterface thermo = new ThermoAdapter();
         //TODO: Replace the implementation of CelsiusThermo() with ThermoAdapter.
 
 

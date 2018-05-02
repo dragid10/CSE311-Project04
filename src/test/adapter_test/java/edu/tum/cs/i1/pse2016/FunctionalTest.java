@@ -1,5 +1,8 @@
 package test.adapter_test.java.edu.tum.cs.i1.pse2016;
 
+
+import main.adapter.ThermoAdapter;
+import main.adapter.ThermoInterface;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
