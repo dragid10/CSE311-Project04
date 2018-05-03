@@ -1,4 +1,4 @@
-package test.adapter_test.java.edu.tum.cs.i1.pse2016;
+package test.adapter_test;
 
 
 import main.adapter.ThermoAdapter;
