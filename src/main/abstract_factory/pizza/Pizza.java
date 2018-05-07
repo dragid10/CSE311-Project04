@@ -1,6 +1,7 @@
 package main.abstract_factory.pizza;
 
-
+import main.abstract_factory.toppings.meat.Chicken;
+import main.abstract_factory.toppings.meat.Ham;
 import main.abstract_factory.toppings.meat.Meat;
 import main.abstract_factory.toppings.pepperoni.Pepperoni;
 import main.abstract_factory.toppings.sauce.Sauce;
@@ -19,7 +20,8 @@ public abstract class Pizza {
     Pepperoni pepperoni;
     Clams clam;
     public Meat meat;
-    //TODO: Extend the Pizza class for the meat topping
+    public Ham ham;
+    public Chicken chicken;
 
     public abstract void prepare();
 
@@ -67,6 +69,10 @@ public abstract class Pizza {
             }
             result.append("\n");
         }
+        if (meat != null) {
+           result.append(meat);
+           result.append("\n");
+        }
         if (clam != null) {
             result.append(clam);
             result.append("\n");
@@ -75,7 +81,14 @@ public abstract class Pizza {
             result.append(pepperoni);
             result.append("\n");
         }
-        //TODO: Extend the toString() method to deal with meat toppings
+        if (ham != null) {
+            result.append(ham);
+            result.append("\n");
+        }
+        if (chicken != null) {
+            result.append(chicken);
+            result.append("\n");
+        }
         return result.toString();
     }
 }

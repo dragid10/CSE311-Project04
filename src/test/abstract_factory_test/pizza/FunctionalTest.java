@@ -6,6 +6,7 @@ import main.abstract_factory.pizzastore.NYPizzaStore;
 import main.abstract_factory.pizzastore.PizzaStore;
 import main.abstract_factory.toppings.cheese.MozzarellaCheese;
 import main.abstract_factory.toppings.cheese.ReggianoCheese;
+import main.abstract_factory.toppings.meat.Chicken;
 import main.abstract_factory.toppings.meat.Ham;
 import org.junit.Before;
 import org.junit.Test;
@@ -31,7 +32,7 @@ public class FunctionalTest {
 
     @Test(timeout = 100)
     public void testMeatForMeatPizzaInChicago() {
-//        assertTrue("People from Chicago expect their Pizza with Chicken - That is not the case here.", chicagoPizzaStore.orderPizza("meat").meat instanceof Chicken);
+        assertTrue("People from Chicago expect their Pizza with Chicken - That is not the case here.", chicagoPizzaStore.orderPizza("meat").meat instanceof Chicken);
     }
 
     @Test(timeout = 100)

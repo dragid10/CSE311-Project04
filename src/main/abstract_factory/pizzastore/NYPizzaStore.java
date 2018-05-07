@@ -32,8 +32,10 @@ public class NYPizzaStore extends PizzaStore {
             pizza = new PepperoniPizza(ingredientFactory);
             pizza.setName("New York Style Pepperoni Pizza");
 
+        } else if (item.equals("meat")) {
+            pizza = new MeatPizza(ingredientFactory);
+            pizza.setName("New York Style Ham Pizza");
         }
-        //TODO: Create pizzas of type meat here and give them an appropriate name
         return pizza;
     }
 }
