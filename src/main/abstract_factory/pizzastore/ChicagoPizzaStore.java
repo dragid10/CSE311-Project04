@@ -37,7 +37,6 @@ public class ChicagoPizzaStore extends PizzaStore {
 
             pizza = new MeatPizza(ingredientFactory);
             pizza.setName("Chicago Style Meat Pizza");
-
         }
 
         return pizza;

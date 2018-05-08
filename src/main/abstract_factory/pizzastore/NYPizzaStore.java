@@ -34,7 +34,7 @@ public class NYPizzaStore extends PizzaStore {
 
         } else if (item.equals("meat")) {
             pizza = new MeatPizza(ingredientFactory);
-            pizza.setName("New York Style Ham Pizza");
+            pizza.setName("New York Style Meat Pizza");
         }
         return pizza;
     }
