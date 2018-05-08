@@ -22,6 +22,7 @@ import static org.junit.Assert.assertEquals;
 @RunWith(Parameterized.class)
 public class StructuralTest {
     private String clazzName;
+    private String packageName = "main.abstract_factory.toppingfactory";
     private JSONObject expectedClazz;
 
     // Each parameter should be placed as an argument here
@@ -68,8 +69,7 @@ public class StructuralTest {
 
     @Test
     public void testHierarchy() throws ClassNotFoundException {
-        Class<?> clazz = Class.forName(StructuralTest.class.getPackage()
-                .getName() + "." + clazzName);
+        Class<?> clazz = Class.forName(packageName + "." + clazzName);
         try {
             String superClazz = expectedClazz.getString("superclass");
             assertEquals("Does not extend class " + superClazz + ".",
@@ -110,8 +110,7 @@ public class StructuralTest {
 
     @Test
     public void testConstructors() throws ClassNotFoundException {
-        Class<?> clazz = Class.forName(StructuralTest.class.getPackage()
-                .getName() + "." + clazzName);
+        Class<?> clazz = Class.forName(packageName + "." + clazzName);
         try {
             JSONArray expectedConstructors = expectedClazz
                     .getJSONArray("constructors");
@@ -125,8 +124,7 @@ public class StructuralTest {
     @Test
     public void testFields() throws ClassNotFoundException,
             NoSuchFieldException {
-        Class<?> clazz = Class.forName(StructuralTest.class.getPackage()
-                .getName() + "." + clazzName);
+        Class<?> clazz = Class.forName(packageName + "." + clazzName);
         try {
             JSONObject fields = expectedClazz.getJSONObject("fields");
             checkFields(clazz, fields);
@@ -139,8 +137,7 @@ public class StructuralTest {
     @Test
     public void testMethods() throws ClassNotFoundException,
             NoSuchMethodException {
-        Class<?> clazz = Class.forName(StructuralTest.class.getPackage()
-                .getName() + "." + clazzName);
+        Class<?> clazz = Class.forName(packageName + "." + clazzName);
         try {
             JSONObject jsonMethods = expectedClazz.getJSONObject("methods");
             checkMethods(clazz, jsonMethods);

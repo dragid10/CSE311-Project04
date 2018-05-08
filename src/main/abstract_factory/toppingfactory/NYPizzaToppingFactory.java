@@ -1,7 +1,6 @@
 package main.abstract_factory.toppingfactory;
 
-
-import main.abstract_factory.toppings.meat.Meat;
+import main.abstract_factory.toppings.meat.*;
 import main.abstract_factory.toppings.pepperoni.Pepperoni;
 import main.abstract_factory.toppings.pepperoni.SlicedPepperoni;
 import main.abstract_factory.toppings.sauce.MarinaraSauce;
@@ -41,6 +40,6 @@ public class NYPizzaToppingFactory implements PizzaToppingFactory {
         return new FreshClams();
     }
 
-    public Meat createMeat() { return null; }
+    public Meat createMeat() {return new Ham();}
 
 }

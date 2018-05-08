@@ -1,8 +1,9 @@
 package main.abstract_factory.toppingfactory;
 
-
+import main.abstract_factory.toppings.meat.Chicken;
 import main.abstract_factory.toppings.meat.Meat;
 import main.abstract_factory.toppings.pepperoni.Pepperoni;
+import main.abstract_factory.toppings.meat.Ham;
 import main.abstract_factory.toppings.sauce.Sauce;
 import main.abstract_factory.toppings.veggies.Veggies;
 import main.abstract_factory.toppings.cheese.Cheese;
@@ -24,5 +25,4 @@ public interface PizzaToppingFactory {
     Clams createClam();
 
     Meat createMeat();
-    //TODO: Extend the PizzaToppingFactory with a method to create a meat topping
 }
