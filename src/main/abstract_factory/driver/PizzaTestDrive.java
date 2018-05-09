@@ -49,13 +49,5 @@ public class PizzaTestDrive {
 
         pizza = chicagoStore.orderPizza("meat");
         System.out.println("Joel ordered a " + pizza + "\n");
-
-        // Will specify that the ordered pizza is a ham pizza at the New York store.
-        pizza = nyStore.orderPizza("ham");
-        System.out.println("Ethan ordered a " + pizza + "\n");
-
-        // Will specify that the ordered pizza is a chicken pizza at the Chicago store.
-        pizza = chicagoStore.orderPizza("chicken");
-        System.out.println("Joel ordered a " + pizza + "\n");
     }
 }
