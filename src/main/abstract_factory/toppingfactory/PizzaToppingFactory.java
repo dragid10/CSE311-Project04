@@ -1,3 +1,8 @@
+/**
+ * Code created by: Togiberlin
+ * Modifications by: Joel Minton
+ * Created the method "createMeat()" which will return a meat for the pizza.
+ */
 package main.abstract_factory.toppingfactory;
 
 import main.abstract_factory.toppings.meat.Chicken;

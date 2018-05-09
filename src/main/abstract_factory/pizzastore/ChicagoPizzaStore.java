@@ -1,3 +1,8 @@
+/**
+ * Code created by: Togiberlin
+ * Modifications by: Joel Minton
+ */
+
 package main.abstract_factory.pizzastore;
 
 
@@ -33,6 +38,7 @@ public class ChicagoPizzaStore extends PizzaStore {
             pizza.setName("Chicago Style Pepperoni Pizza");
 
         }
+        //If passed, a new meat pizza is created.
         else if (item.equals("meat")) {
 
             pizza = new MeatPizza(ingredientFactory);

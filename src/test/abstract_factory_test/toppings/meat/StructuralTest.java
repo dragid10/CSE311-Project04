@@ -1,3 +1,10 @@
+/**
+ * Code created by: Togiberlin
+ * Modifications by: Joel Minton
+ *
+ * Changes made to the tests did not affect their logic. They were necessary
+ * in order for the tests to function properly.
+ */
 package test.abstract_factory_test.toppings.meat;
 
 import org.json.JSONArray;
@@ -22,6 +29,11 @@ import static org.junit.Assert.assertEquals;
 @RunWith(Parameterized.class)
 public class StructuralTest {
     private String clazzName;
+
+    /*
+    This is used when determining the name of the driver package and was not
+    in the original code. The tests threw errors when this line was not in the code.
+     */
     private String packageName = "main.abstract_factory.toppings.meat";
     private JSONObject expectedClazz;
 

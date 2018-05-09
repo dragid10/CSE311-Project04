@@ -1,3 +1,8 @@
+/**
+ * Code created by: Togiberlin
+ * Modifications by: Joel Minton
+ */
+
 package main.abstract_factory.pizzastore;
 
 
@@ -32,7 +37,9 @@ public class NYPizzaStore extends PizzaStore {
             pizza = new PepperoniPizza(ingredientFactory);
             pizza.setName("New York Style Pepperoni Pizza");
 
-        } else if (item.equals("meat")) {
+        }
+        // If passed, a new meat pizza is created.
+        else if (item.equals("meat")) {
             pizza = new MeatPizza(ingredientFactory);
             pizza.setName("New York Style Meat Pizza");
         }

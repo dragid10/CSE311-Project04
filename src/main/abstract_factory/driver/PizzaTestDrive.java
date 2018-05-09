@@ -1,5 +1,9 @@
-package main.abstract_factory.driver;
+/**
+ * Code created by: Togiberlin
+ * Modifications by: Joel Minton
+ */
 
+package main.abstract_factory.driver;
 
 import main.abstract_factory.pizza.Pizza;
 import main.abstract_factory.pizzastore.ChicagoPizzaStore;
@@ -36,15 +40,21 @@ public class PizzaTestDrive {
         pizza = chicagoStore.orderPizza("veggie");
         System.out.println("Joel ordered a " + pizza + "\n");
 
+        /*
+        Will specify that the ordered pizza is a meat pizza at the New York and
+        Chicago pizza stores.
+         */
         pizza = nyStore.orderPizza("meat");
         System.out.println("Ethan ordered a " + pizza + "\n");
 
         pizza = chicagoStore.orderPizza("meat");
         System.out.println("Joel ordered a " + pizza + "\n");
 
-        pizza = nyStore.orderPizza("chicken");
+        // Will specify that the ordered pizza is a ham pizza at the New York store.
+        pizza = nyStore.orderPizza("ham");
         System.out.println("Ethan ordered a " + pizza + "\n");
 
+        // Will specify that the ordered pizza is a chicken pizza at the Chicago store.
         pizza = chicagoStore.orderPizza("chicken");
         System.out.println("Joel ordered a " + pizza + "\n");
     }
